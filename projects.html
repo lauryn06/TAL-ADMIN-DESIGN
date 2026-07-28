@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — TAL Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="topbar">
+  <div class="logo">TAL<span class="logo-tag">Admin</span></div>
+  <div class="topbar-right">
+    <div class="topbar-search" role="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Search applicants, mentors, partners…">
+    </div>
+    <button class="icon-btn" aria-label="Notifications"><span class="dot"></span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+    </button>
+    <a class="live-link" href="http://localhost:3000">View live site</a>
+    <div class="avatar-block">
+      <div class="avatar">LM</div>
+      <div class="avatar-meta"><div class="avatar-name">Lauryn Mwase</div><div class="avatar-role">Program Admin</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="sidebar" aria-label="Admin navigation">
+    <div>
+      <div class="nav-group-label">Overview</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="dashboard.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg></span>
+          Dashboard
+        </a></li>
+      </ul>
+      <div class="nav-group-label">Cohort 05</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="applicants.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          Applicants <span class="nav-badge">38</span>
+        </a></li>
+        <li class="nav-item"><a href="mentors.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          Mentors
+        </a></li>
+        <li class="nav-item active"><a href="projects.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
+          Projects
+        </a></li>
+      </ul>
+      <div class="nav-group-label">Ecosystem</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="partners.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="14" rx="1"/><path d="M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"/></svg></span>
+          Partners
+        </a></li>
+        <li class="nav-item"><a href="content.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+          Content &amp; Blog
+        </a></li>
+        <li class="nav-item"><a href="settings.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+          Settings
+        </a></li>
+      </ul>
+    </div>
+    <div class="sidebar-foot"><strong>Cohort 05</strong> applications close<br>31 October — 12 days left</div>
+  </nav>
+
+  <main class="main" id="main">
+    <div class="page-head">
+      <div>
+        <span class="eyebrow">Cohort 05</span>
+        <h1 class="page-title">Talent <span class="accent">acquisition</span> &amp; placements.</h1>
+        <p class="page-desc">16 live placements with partner organisations. 2 are flagged behind schedule and need a check-in.</p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-outline">New placement</button>
+        <button class="btn btn-gold">Schedule demo day</button>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <button class="filter-chip active">All (16)</button>
+      <button class="filter-chip">On track (11)</button>
+      <button class="filter-chip">Flagged (2)</button>
+      <button class="filter-chip">Completed (3)</button>
+      <div class="search-box">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search projects">
+      </div>
+    </div>
+
+    <section class="panel">
+      <div class="panel-body" style="padding-top:12px;">
+        <table>
+          <thead>
+            <tr><th>Project</th><th>Talent</th><th>Partner</th><th>Progress</th><th>Status</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="cell-name">USSD Payments Sandbox</div><div class="cell-sub">Software track</div></td>
+              <td>Grace Phiri</td>
+              <td>Konnect Labs</td>
+              <td style="min-width:140px;"><div class="progress-track"><div class="progress-fill" style="width:78%;"></div></div></td>
+              <td><span class="pill pill-teal">On track</span></td>
+              <td><button class="btn btn-ghost">Open →</button></td>
+            </tr>
+            <tr>
+              <td><div class="cell-name">Rural Yield Dataset</div><div class="cell-sub">Data track</div></td>
+              <td>Tadala Banda</td>
+              <td>StatBridge</td>
+              <td style="min-width:140px;"><div class="progress-track"><div class="progress-fill gold" style="width:34%;"></div></div></td>
+              <td><span class="pill pill-danger">Flagged</span></td>
+              <td><button class="btn btn-ghost">Open →</button></td>
+            </tr>
+            <tr>
+              <td><div class="cell-name">Solar Micro-grid Monitor</div><div class="cell-sub">Hardware track</div></td>
+              <td>Ephraim Mvula</td>
+              <td>MakerHub MW</td>
+              <td style="min-width:140px;"><div class="progress-track"><div class="progress-fill" style="width:52%;"></div></div></td>
+              <td><span class="pill pill-teal">On track</span></td>
+              <td><button class="btn btn-ghost">Open →</button></td>
+            </tr>
+            <tr>
+              <td><div class="cell-name">Crop Disease Vision Model</div><div class="cell-sub">Applied research</div></td>
+              <td>Asante Nyirenda</td>
+              <td>MUBAS Innovation Hub</td>
+              <td style="min-width:140px;"><div class="progress-track"><div class="progress-fill gold" style="width:21%;"></div></div></td>
+              <td><span class="pill pill-danger">Flagged</span></td>
+              <td><button class="btn btn-ghost">Open →</button></td>
+            </tr>
+            <tr>
+              <td><div class="cell-name">Airtel Money API Gateway</div><div class="cell-sub">Software track</div></td>
+              <td>Chikondi Mwale</td>
+              <td>Airtel MW</td>
+              <td style="min-width:140px;"><div class="progress-track"><div class="progress-fill" style="width:100%;"></div></div></td>
+              <td><span class="pill pill-navy">Completed</span></td>
+              <td><button class="btn btn-ghost">Open →</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>

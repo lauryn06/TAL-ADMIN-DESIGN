@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — TAL Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="topbar">
+  <div class="logo">TAL<span class="logo-tag">Admin</span></div>
+  <div class="topbar-right">
+    <div class="topbar-search" role="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Search applicants, mentors, partners…">
+    </div>
+    <button class="icon-btn" aria-label="Notifications"><span class="dot"></span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+    </button>
+    <a class="live-link" href="http://localhost:3000">View live site</a>
+    <div class="avatar-block">
+      <div class="avatar">LM</div>
+      <div class="avatar-meta">
+        <div class="avatar-name">Lauryn Mwase</div>
+        <div class="avatar-role">Program Admin</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="sidebar" aria-label="Admin navigation">
+    <div>
+      <div class="nav-group-label">Overview</div>
+      <ul class="nav-list">
+        <li class="nav-item active"><a href="dashboard.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg></span>
+          Dashboard
+        </a></li>
+      </ul>
+      <div class="nav-group-label">Cohort 05</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="applicants.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          Applicants <span class="nav-badge">38</span>
+        </a></li>
+        <li class="nav-item"><a href="mentors.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          Mentors
+        </a></li>
+        <li class="nav-item"><a href="projects.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
+          Projects
+        </a></li>
+      </ul>
+      <div class="nav-group-label">Ecosystem</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="partners.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="14" rx="1"/><path d="M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"/></svg></span>
+          Partners
+        </a></li>
+        <li class="nav-item"><a href="content.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+          Content &amp; Blog
+        </a></li>
+        <li class="nav-item"><a href="settings.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+          Settings
+        </a></li>
+      </ul>
+    </div>
+    <div class="sidebar-foot">
+      <strong>Cohort 05</strong> applications close<br>31 October — 12 days left
+    </div>
+  </nav>
+
+  <main class="main" id="main">
+    <div class="page-head">
+      <div>
+        <span class="eyebrow">Good morning, Naomi</span>
+        <h1 class="page-title">Program <span class="accent">overview.</span></h1>
+        <p class="page-desc">Here's where Cohort 05 stands across applications, mentor pairing, and active placements.</p>
+      </div>
+      <div class="head-actions">
+        <a class="btn btn-outline" href="content.html">Edit banner</a>
+        <a class="btn btn-gold" href="applicants.html">Review applicants</a>
+      </div>
+    </div>
+
+    <section class="stat-grid" aria-label="Key metrics">
+      <div class="stat-card">
+        <div class="stat-top">
+          <span class="stat-label">Applicants</span>
+          <span class="stat-badge badge-navy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </span>
+        </div>
+        <div class="stat-value">312</div>
+        <div class="stat-delta delta-up">↑ 46 this week</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-top">
+          <span class="stat-label">Awaiting review</span>
+          <span class="stat-badge badge-gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+        </div>
+        <div class="stat-value">38</div>
+        <div class="stat-delta delta-flat">Avg. 2.1 days to review</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-top">
+          <span class="stat-label">Active mentors</span>
+          <span class="stat-badge badge-teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </span>
+        </div>
+        <div class="stat-value">47</div>
+        <div class="stat-delta delta-up">↑ 5 unpaired talent</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-top">
+          <span class="stat-label">Live projects</span>
+          <span class="stat-badge badge-navy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          </span>
+        </div>
+        <div class="stat-value">16</div>
+        <div class="stat-delta delta-down">2 flagged behind schedule</div>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section class="panel">
+        <div class="panel-head">
+          <h2 class="panel-title">Recent <span class="accent">applications.</span></h2>
+          <a class="panel-link" href="applicants.html">View all →</a>
+        </div>
+        <div class="panel-body">
+          <table>
+            <thead>
+              <tr><th>Applicant</th><th>Track</th><th>Submitted</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="name-row">
+                    <div class="cell-avatar">CM</div>
+                    <div><div class="cell-name">Chikondi Mwale</div><div class="cell-sub">Blantyre</div></div>
+                  </div>
+                </td>
+                <td>Software</td>
+                <td>Today</td>
+                <td><span class="pill pill-gold">Pending</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="name-row">
+                    <div class="cell-avatar">TB</div>
+                    <div><div class="cell-name">Tadala Banda</div><div class="cell-sub">Mzuzu</div></div>
+                  </div>
+                </td>
+                <td>Data</td>
+                <td>Today</td>
+                <td><span class="pill pill-gold">Pending</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="name-row">
+                    <div class="cell-avatar">FK</div>
+                    <div><div class="cell-name">Fatsani Kumwenda</div><div class="cell-sub">Lilongwe</div></div>
+                  </div>
+                </td>
+                <td>Hardware</td>
+                <td>Yesterday</td>
+                <td><span class="pill pill-teal">Shortlisted</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="name-row">
+                    <div class="cell-avatar">AN</div>
+                    <div><div class="cell-name">Asante Nyirenda</div><div class="cell-sub">Zomba</div></div>
+                  </div>
+                </td>
+                <td>Applied research</td>
+                <td>2 days ago</td>
+                <td><span class="pill pill-danger">Waitlisted</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2 class="panel-title">Activity</h2>
+        </div>
+        <div class="panel-body">
+          <ul class="step-list">
+            <li class="step-item">
+              <span class="step-num teal">1</span>
+              <div>
+                <div class="step-text"><strong>Grace Phiri</strong> paired with mentor David Chirwa</div>
+                <div class="step-time">14 minutes ago</div>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num gold">2</span>
+              <div>
+                <div class="step-text">Skills Development workshop batch published</div>
+                <div class="step-time">2 hours ago</div>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num">3</span>
+              <div>
+                <div class="step-text">Partner <strong>Konnect Labs</strong> added 3 placement slots</div>
+                <div class="step-time">Yesterday, 4:12 PM</div>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num teal">4</span>
+              <div>
+                <div class="step-text">Demo Day for Cohort 04 marked complete</div>
+                <div class="step-time">2 days ago</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">Cohort <span class="accent">progress.</span></h2>
+        <span class="pill pill-navy">Cohort 05 · Week 3 of 12</span>
+      </div>
+      <div class="panel-body" style="padding-top:16px;">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+          <div>
+            <div class="flex-between" style="margin-bottom:8px;"><span class="stat-label">Mentorship pairing</span><span style="font-size:12.5px;color:var(--muted);">42 / 47</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width:89%;"></div></div>
+          </div>
+          <div>
+            <div class="flex-between" style="margin-bottom:8px;"><span class="stat-label">Talent acquisition</span><span style="font-size:12.5px;color:var(--muted);">16 / 25</span></div>
+            <div class="progress-track"><div class="progress-fill gold" style="width:64%;"></div></div>
+          </div>
+          <div>
+            <div class="flex-between" style="margin-bottom:8px;"><span class="stat-label">Skills workshops</span><span style="font-size:12.5px;color:var(--muted);">5 / 8</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width:62%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>

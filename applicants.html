@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Applicants — TAL Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="topbar">
+  <div class="logo">TAL<span class="logo-tag">Admin</span></div>
+  <div class="topbar-right">
+    <div class="topbar-search" role="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Search applicants, mentors, partners…">
+    </div>
+    <button class="icon-btn" aria-label="Notifications"><span class="dot"></span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+    </button>
+    <a class="live-link" href="http://localhost:3000">View live site</a>
+    <div class="avatar-block">
+      <div class="avatar">LM</div>
+      <div class="avatar-meta"><div class="avatar-name">Lauryn Mwase</div><div class="avatar-role">Program Admin</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="sidebar" aria-label="Admin navigation">
+    <div>
+      <div class="nav-group-label">Overview</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="dashboard.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg></span>
+          Dashboard
+        </a></li>
+      </ul>
+      <div class="nav-group-label">Cohort 05</div>
+      <ul class="nav-list">
+        <li class="nav-item active"><a href="applicants.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          Applicants <span class="nav-badge">38</span>
+        </a></li>
+        <li class="nav-item"><a href="mentors.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          Mentors
+        </a></li>
+        <li class="nav-item"><a href="projects.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
+          Projects
+        </a></li>
+      </ul>
+      <div class="nav-group-label">Ecosystem</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="partners.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="14" rx="1"/><path d="M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"/></svg></span>
+          Partners
+        </a></li>
+        <li class="nav-item"><a href="content.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+          Content &amp; Blog
+        </a></li>
+        <li class="nav-item"><a href="settings.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+          Settings
+        </a></li>
+      </ul>
+    </div>
+    <div class="sidebar-foot"><strong>Cohort 05</strong> applications close<br>31 October — 12 days left</div>
+  </nav>
+
+  <main class="main" id="main">
+    <div class="page-head">
+      <div>
+        <span class="eyebrow">Cohort 05</span>
+        <h1 class="page-title">Review <span class="accent">applicants.</span></h1>
+        <p class="page-desc">312 applications received. 38 are waiting on a decision — sorted oldest first.</p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-outline">Export CSV</button>
+        <button class="btn btn-gold">Bulk shortlist</button>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <button class="filter-chip active">All (312)</button>
+      <button class="filter-chip">Pending (38)</button>
+      <button class="filter-chip">Shortlisted (94)</button>
+      <button class="filter-chip">Accepted (61)</button>
+      <button class="filter-chip">Waitlisted (28)</button>
+      <button class="filter-chip">Declined (91)</button>
+      <div class="search-box">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search by name or track">
+      </div>
+    </div>
+
+    <section class="panel">
+      <div class="panel-body" style="padding-top:12px;">
+        <table>
+          <thead>
+            <tr>
+              <th><input type="checkbox" aria-label="Select all"></th>
+              <th>Applicant</th>
+              <th>Track</th>
+              <th>Location</th>
+              <th>Submitted</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><div class="name-row"><div class="cell-avatar">CM</div><div><div class="cell-name">Chikondi Mwale</div><div class="cell-sub">chikondi.m@gmail.com</div></div></div></td>
+              <td>Software</td>
+              <td>Blantyre</td>
+              <td>Today, 09:14</td>
+              <td><span class="pill pill-gold">Pending</span></td>
+              <td><button class="btn btn-ghost">Review →</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><div class="name-row"><div class="cell-avatar">TB</div><div><div class="cell-name">Tadala Banda</div><div class="cell-sub">tadala.banda@yahoo.com</div></div></div></td>
+              <td>Data</td>
+              <td>Mzuzu</td>
+              <td>Today, 08:02</td>
+              <td><span class="pill pill-gold">Pending</span></td>
+              <td><button class="btn btn-ghost">Review →</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><div class="name-row"><div class="cell-avatar">FK</div><div><div class="cell-name">Fatsani Kumwenda</div><div class="cell-sub">f.kumwenda@outlook.com</div></div></div></td>
+              <td>Hardware</td>
+              <td>Lilongwe</td>
+              <td>Yesterday</td>
+              <td><span class="pill pill-teal">Shortlisted</span></td>
+              <td><button class="btn btn-ghost">Review →</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><div class="name-row"><div class="cell-avatar">AN</div><div><div class="cell-name">Asante Nyirenda</div><div class="cell-sub">asante.n@gmail.com</div></div></div></td>
+              <td>Applied research</td>
+              <td>Zomba</td>
+              <td>2 days ago</td>
+              <td><span class="pill pill-danger">Waitlisted</span></td>
+              <td><button class="btn btn-ghost">Review →</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><div class="name-row"><div class="cell-avatar">GP</div><div><div class="cell-name">Grace Phiri</div><div class="cell-sub">grace.phiri@gmail.com</div></div></div></td>
+              <td>Software</td>
+              <td>Mzuzu</td>
+              <td>3 days ago</td>
+              <td><span class="pill pill-navy">Accepted</span></td>
+              <td><button class="btn btn-ghost">Review →</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><div class="name-row"><div class="cell-avatar">EM</div><div><div class="cell-name">Ephraim Mvula</div><div class="cell-sub">e.mvula@students.mubas.ac.mw</div></div></div></td>
+              <td>Hardware</td>
+              <td>Blantyre</td>
+              <td>4 days ago</td>
+              <td><span class="pill pill-outline">Declined</span></td>
+              <td><button class="btn btn-ghost">Review →</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>

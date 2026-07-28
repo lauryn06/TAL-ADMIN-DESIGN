@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings — TAL Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="topbar">
+  <div class="logo">TAL<span class="logo-tag">Admin</span></div>
+  <div class="topbar-right">
+    <div class="topbar-search" role="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Search applicants, mentors, partners…">
+    </div>
+    <button class="icon-btn" aria-label="Notifications"><span class="dot"></span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+    </button>
+    <a class="live-link" href="http://localhost:3000">View live site</a>
+    <div class="avatar-block">
+      <div class="avatar">LM</div>
+      <div class="avatar-meta"><div class="avatar-name">Lauryn Mwase</div><div class="avatar-role">Program Admin</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="sidebar" aria-label="Admin navigation">
+    <div>
+      <div class="nav-group-label">Overview</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="dashboard.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg></span>
+          Dashboard
+        </a></li>
+      </ul>
+      <div class="nav-group-label">Cohort 05</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="applicants.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          Applicants <span class="nav-badge">38</span>
+        </a></li>
+        <li class="nav-item"><a href="mentors.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          Mentors
+        </a></li>
+        <li class="nav-item"><a href="projects.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
+          Projects
+        </a></li>
+      </ul>
+      <div class="nav-group-label">Ecosystem</div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="partners.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="14" rx="1"/><path d="M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3"/></svg></span>
+          Partners
+        </a></li>
+        <li class="nav-item"><a href="content.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+          Content &amp; Blog
+        </a></li>
+        <li class="nav-item active"><a href="settings.html">
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+          Settings
+        </a></li>
+      </ul>
+    </div>
+    <div class="sidebar-foot"><strong>Cohort 05</strong> applications close<br>31 October — 12 days left</div>
+  </nav>
+
+  <main class="main" id="main">
+    <div class="page-head">
+      <div>
+        <span class="eyebrow">Admin</span>
+        <h1 class="page-title">Settings &amp; <span class="accent">configuration.</span></h1>
+        <p class="page-desc">Manage the current cohort, your admin team, and notification preferences.</p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <section class="panel">
+          <div class="panel-head"><h2 class="panel-title">Cohort <span class="accent">settings.</span></h2></div>
+          <div class="panel-body" style="padding-top:16px;">
+            <div class="form-grid">
+              <div class="field">
+                <label for="cohort-name">Current cohort</label>
+                <input id="cohort-name" type="text" value="Cohort 05">
+              </div>
+              <div class="field">
+                <label for="cohort-size">Target intake</label>
+                <input id="cohort-size" type="text" value="50 talent">
+              </div>
+              <div class="field">
+                <label for="app-open">Applications open</label>
+                <input id="app-open" type="date" value="2026-09-01">
+              </div>
+              <div class="field">
+                <label for="app-close">Applications close</label>
+                <input id="app-close" type="date" value="2026-10-31">
+              </div>
+              <div class="field full">
+                <label for="tracks">Tracks</label>
+                <input id="tracks" type="text" value="Software, Data, Hardware, Applied research">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head"><h2 class="panel-title">Admin <span class="accent">team.</span></h2></div>
+          <div class="panel-body" style="padding-top:6px;">
+            <table>
+              <thead><tr><th>Name</th><th>Role</th><th>Access</th><th></th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><div class="name-row"><div class="cell-avatar">NM</div><div class="cell-name">Naomi M.</div></div></td>
+                  <td>Program Admin</td>
+                  <td><span class="pill pill-navy">Full access</span></td>
+                  <td><button class="btn btn-ghost">Manage</button></td>
+                </tr>
+                <tr>
+                  <td><div class="name-row"><div class="cell-avatar">BK</div><div class="cell-name">Blessings K.</div></div></td>
+                  <td>Content Editor</td>
+                  <td><span class="pill pill-outline">Content only</span></td>
+                  <td><button class="btn btn-ghost">Manage</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="margin-top:14px;"><button class="btn btn-outline">Invite admin</button></div>
+          </div>
+        </section>
+      </div>
+
+      <section class="panel">
+        <div class="panel-head"><h2 class="panel-title">Notifications</h2></div>
+        <div class="panel-body" style="padding-top:8px;">
+          <div class="toggle-row">
+            <div><div class="toggle-title">New applications</div><div class="toggle-desc">Email when a new applicant submits</div></div>
+            <div class="switch on" role="switch" aria-checked="true"></div>
+          </div>
+          <div class="toggle-row">
+            <div><div class="toggle-title">Placement flags</div><div class="toggle-desc">Alert when a project falls behind schedule</div></div>
+            <div class="switch on" role="switch" aria-checked="true"></div>
+          </div>
+          <div class="toggle-row">
+            <div><div class="toggle-title">Weekly digest</div><div class="toggle-desc">Summary every Monday at 8am</div></div>
+            <div class="switch" role="switch" aria-checked="false"></div>
+          </div>
+          <div class="toggle-row">
+            <div><div class="toggle-title">Partner updates</div><div class="toggle-desc">Notify when a partner adds or removes slots</div></div>
+            <div class="switch on" role="switch" aria-checked="true"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
